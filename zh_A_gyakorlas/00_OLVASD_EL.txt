@@ -1,0 +1,34 @@
+SOCKET ZH A: GYAKORLO KERET (ugy, mint a ZH-n)
+==============================================
+
+Kell hozza: Python 3.8 vagy ujabb. Semmi mas (nincs Docker, nincs internet).
+
+FELEPITES (ugyanaz, mint a ZH csomagban)
+  feladat1/client.py     1. feladat: jaratfoglalas (TCP kliens)          6 pont
+  feladat2/server.py     2. feladat: raktarkeszlet (select szerver)      6 pont
+  feladat3/proxy.py      3. feladat: azonositasi proxy (TCP -> UDP)      8 pont
+  tests.py               helyi tesztelo (az en utanzatom, NEM a valodi)
+  megoldasok/            a kesz megoldasok (csak ha tenyleg elakadtal)
+
+Minden vaz tetejen ott a feladat leirasa. Csak a "# ide ird a megoldast" alatt dolgozz.
+
+ELLENORZES
+  python tests.py check feladat1
+  python tests.py check feladat2
+  python tests.py check feladat3
+(Mac: python3.) A teszt kiirja soronkent, mi volt jo (OK) es mi nem (HIBA), mit kapott es mit varna.
+
+KEZI MOD (a ZH-s start/test mintajara, ket ablakkal)
+  python tests.py start feladat1   -> masik ablakban: python feladat1/client.py localhost 20001
+  python tests.py start feladat3   -> masik ablakban: python feladat3/proxy.py 10002 20002
+                                      harmadikban:    python tests.py test feladat3 10002
+  feladat2: python feladat2/server.py 10001  ->  masik ablakban: python tests.py test feladat2 10001
+
+JAVASOLT GYAKORLAS
+  1) Idozitett kor: feladatonkent max 25 perc, puska nelkul. Utana check.
+  2) Ami elbukott, azt javitsd ki, aztan nezd meg a megoldast, ha kell.
+  3) Masodik kor: a puskaval, hogy lasd, mennyit gyorsit.
+
+FONTOS
+  A tests.py itt csak egy utanzat: a ZH-n a valodi tesztet futtasd. A valodi teszt reszletei
+  (pl. hogy a 2 uzenet ugyanazon a kapcsolaton megy-e az 1. feladatban) eltérhetnek az enyemtol.

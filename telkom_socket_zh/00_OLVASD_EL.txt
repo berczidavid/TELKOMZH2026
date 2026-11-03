@@ -1,0 +1,28 @@
+TELKOM 2. ZH (SOCKET): MAGYARAZO + GYAKORLO CSOMAG
+===================================================
+
+Kell hozza: Python 3.8 vagy ujabb. Semmi mas (nem kell internet, Docker, telepites).
+
+MAPPAK
+  magyarazat/                 Socket_ZH_magyarazat.pdf  (ezzel kezdd)
+  peldak/                     p1..p5: futtathato, kommentelt peldak (megnezed, lefuttatod)
+  feladatok/                  f1..f5: ures vazak + onellenorzo teszt (te irod meg)
+  feladatok/megoldasok/       a kesz megoldasok (csak ha tenyleg elakadtal)
+
+HOGYAN FUTTASD
+  Mac / Linux:   python3 peldak/p1_tcp_kliens.py
+  Windows:       python peldak\p1_tcp_kliens.py      (vagy: py peldak\p1_tcp_kliens.py)
+
+  A feladatokat a feladatok mappabol futtasd:
+  cd feladatok
+  python3 f1_kliens.py
+  Amig nincs kesz: "F1: meg nincs megirva". Ha jo: "F1: minden teszt OK".
+  Ha rossz, a teszt megmondja, mit kapott es mit kellett volna.
+
+AJANLOTT SORREND
+  p1 -> f1 | p3 -> f2 | p2 -> f3 | p4 -> f4 | p5 -> f5
+
+FONTOS
+  A ZH-n AI-t nem lehet hasznalni. Hogy AI-val keszult segedletet be szabad-e vinni,
+  azt kerdezd meg a gyakvezetot. A biztos ut: a segedletedet a SAJAT, kezzel megirt
+  megoldasaidbol allitsd ossze.
